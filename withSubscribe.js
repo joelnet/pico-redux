@@ -1,7 +1,8 @@
 module.exports = function withSubscribe(createStore) {
-  return function(reducer, state) {
+  return function withSubscribe_createStore() {
     var listeners = []
-    var store = createStore(reducer, state)
+    var args = Array.prototype.slice.call(arguments, 0)
+    var store = createStore.apply(this, args)
 
     return Object.assign(
       {},
