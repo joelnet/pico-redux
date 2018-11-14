@@ -1,0 +1,17 @@
+{
+  "name": "pico-redux",
+  "version": "1.0.0",
+  "description": "A Pico sized Redux",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint ."
+  },
+  "author": "Joel Thoms",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "jest": "^23.6.0"
+  }
+}
