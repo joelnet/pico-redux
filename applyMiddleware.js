@@ -4,13 +4,12 @@ module.exports = function applyMiddleware() {
   return function applyMiddleware2(store) {
     return function applyMiddleware3(done) {
       return function applyMiddleware4(action) {
-        var middlewareQueue = middlewares.slice(0)
+        var i = 0
         function shift() {
-          middlewareQueue.shift()
-          return middlewareQueue.length === 0 ? done() : next()
+          return ++i >= middlewares.length ? done() : next()
         }
         function next() {
-          middlewares[0](store)(shift)(action)
+          middlewares[i](store)(shift)(action)
         }
         next()
       }
