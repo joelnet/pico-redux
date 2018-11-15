@@ -1,16 +1,13 @@
-module.exports = function withMiddleware(createStore) {
-  return function withMiddleware_createStore(reducer, state, middleware) {
-    var args = Array.prototype.slice.call(arguments, 0)
-    var store = createStore.apply(this, args)
+module.exports = createStore => (reducer, state, middleware, ...rest) => {
+  const store = createStore(reducer, state, middleware, ...rest)
 
-    return Object.assign(
-      {},
-      store,
-      {
-        dispatch: function(action) {
-          middleware(store)(function() { store.dispatch(action) })(action)
-        }
+  return Object.assign(
+    {},
+    store,
+    {
+      dispatch(action) {
+        middleware(store)(() => store.dispatch(action))(action)
       }
-    )
-  }
+    }
+  )
 }

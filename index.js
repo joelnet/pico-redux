@@ -1,4 +1,11 @@
+const applyMiddleware = require('./applyMiddleware')
+const createStore = require('./createStore')
+const withMiddleware = require('./withMiddleware')
+const withSubscribe = require('./withSubscribe')
+
 module.exports = {
-  createStore: require('./createStore'),
-  withSubscribe: require('./withSubscribe')
+  applyMiddleware,
+  createStore,
+  withMiddleware,
+  withSubscribe
 }
