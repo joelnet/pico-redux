@@ -1,15 +1,19 @@
 {
   "name": "pico-redux",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A Pico sized Redux",
+  "author": "Joel Thoms",
+  "license": "MIT",
   "main": "index.js",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/joelnet/pico-redux"
+  },
   "scripts": {
     "test": "jest",
     "test:coverage": "jest --coverage",
     "lint": "eslint ."
   },
-  "author": "Joel Thoms",
-  "license": "MIT",
   "devDependencies": {
     "eslint": "^5.9.0",
     "jest": "^23.6.0"
