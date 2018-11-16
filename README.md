@@ -1,6 +1,6 @@
-# Pico Redux ![size:119 bytes](https://img.shields.io/badge/size-119_bytes-green.svg) ![dependencies:0](https://img.shields.io/badge/dependencies-0-green.svg)
+# Pico Redux ![size:65 bytes](https://img.shields.io/badge/size-65_bytes-green.svg) ![dependencies:0](https://img.shields.io/badge/dependencies-0-green.svg)
 
-The smallest possible implementation of Redux. `createStore` minified and gzipped is 119 bytes.
+The smallest possible implementation of Redux. `createStore` minified is 65 bytes.
 
 Pico Redux features a modular design so you only pay (bytes) for the features you use!
 
