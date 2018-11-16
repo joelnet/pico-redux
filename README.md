@@ -1,6 +1,6 @@
-# Pico Redux ![size:65 bytes](https://img.shields.io/badge/size-65_bytes-green.svg) ![dependencies:0](https://img.shields.io/badge/dependencies-0-green.svg)
+# Pico Redux ![size:69 bytes](https://img.shields.io/badge/size-69_bytes-green.svg) ![dependencies:0](https://img.shields.io/badge/dependencies-0-green.svg)
 
-The smallest possible implementation of Redux. `createStore` minified is 65 bytes.
+The smallest possible implementation of Redux. `createStore` minified is 69 bytes.
 
 Pico Redux features a modular design so you only pay (bytes) for the features you use!
 
@@ -34,7 +34,7 @@ store.getState() //=> 100
 
 # withSubscribe
 
-Adds a `subscribe` method to the Pico Redux store.
+Adds a `subscribe` method to the Pico Redux store. `withSubscribe` will add 187 bytes (minified).
 
 ```javascript
 import { createStore, withSubscribe } from 'pico-redux'
@@ -54,7 +54,7 @@ store.dispatch({ type: 'INC', value: 100 })
 
 # withMiddleware
 
-Even Middleware is an addon.
+Even Middleware is an addon. `withMiddleware` will add 128 bytes (minified).
 
 ```javascript
 import { applyMiddleware, createStore, withMiddleware } from 'pico-redux'
