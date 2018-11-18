@@ -7,18 +7,12 @@ addons:
     - github.com
 
 stages:
-  - build
   - test
   - name: deploy
     if: (NOT type IN (pull_request)) AND (branch = master)
 
 jobs:
   include:
-    - stage: build
-      node_js:
-        - "10.3.0"
-      script:
-        - npm run build
     - stage: test
       node_js:
         - "10.3.0"
