@@ -19,6 +19,7 @@
   "scripts": {
     "test": "jest",
     "test:coverage": "jest --coverage",
+    "test:coveralls": "npm run test:coverage -- --coverageReporters=text-lcov | coveralls",
     "lint": "eslint ."
   },
   "devDependencies": {
