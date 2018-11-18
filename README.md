@@ -1,4 +1,4 @@
-# Pico Redux ![size:69 bytes](https://img.shields.io/badge/size-69_bytes-green.svg) ![dependencies:0](https://img.shields.io/badge/dependencies-0-green.svg)
+# Pico Redux ![size:69 bytes](https://img.shields.io/badge/size-69_bytes-green.svg) ![dependencies:0](https://img.shields.io/badge/dependencies-0-green.svg) [![build status](https://travis-ci.org/joelnet/pico-redux.svg?branch=master)](https://travis-ci.org/joelnet/pico-redux) [![Coverage Status](https://coveralls.io/repos/github/joelnet/pico-redux/badge.svg?branch=master)](https://coveralls.io/github/joelnet/pico-redux?branch=master)
 
 The smallest possible implementation of Redux. `createStore` minified is 69 bytes.
 
