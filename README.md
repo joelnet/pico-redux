@@ -4,6 +4,24 @@ The smallest possible implementation of Redux. `createStore` minified is 69 byte
 
 Pico Redux features a modular design so you only pay (bytes) for the features you use!
 
+# Differences with Redux
+
+- Pico Redux is modular, so `subscribe` is not included with `createStore`. If you are using `React`, you will need to use `withSubscribe`.
+- The initial state is _required_ in Pico Redux, it is optional in `Redux`.
+
+```javascript
+// You might need to turn this:
+const store = createStore(rootReducer, init)
+
+// Into this:
+const init = {
+  todos: [],
+  visibilityFilter: VisibilityFilters.SHOW_ALL
+}
+
+const store = withSubscribe(createStore)(rootReducer, init)
+```
+
 # Environment Support
 
 This library supports ES6. If you need to support ES5, you will need to transpile it with Babel.
