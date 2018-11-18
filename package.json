@@ -23,6 +23,7 @@
     "lint": "eslint ."
   },
   "devDependencies": {
+    "coveralls": "^3.0.2",
     "eslint": "^5.9.0",
     "jest": "^23.6.0"
   },
