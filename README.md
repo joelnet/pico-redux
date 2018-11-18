@@ -54,7 +54,7 @@ store.dispatch({ type: 'INC', value: 100 })
 
 # withMiddleware
 
-Even Middleware is an addon. `withMiddleware` will add 128 bytes (minified).
+Even Middleware is an addon. `withMiddleware` will add 40 bytes (minified) and `applyMiddleware` will add 140 bytes (minified).
 
 ```javascript
 import { applyMiddleware, createStore, withMiddleware } from 'pico-redux'

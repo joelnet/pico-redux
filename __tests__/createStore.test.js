@@ -18,4 +18,11 @@ describe('createStore', () => {
     const actual = store.getState()
     expect(actual).toEqual(expected)
   })
+
+  test('dispatch returns action', () => {
+    const expected = { type: 'SET_VALUE', value: 888 }
+    const store = createStore(reducer, { value: 666 } )
+    const actual = store.dispatch(expected)
+    expect(actual).toBe(expected)
+  })
 })

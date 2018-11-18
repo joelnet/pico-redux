@@ -1,6 +1,6 @@
 {
   "name": "pico-redux",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "A Pico sized Redux",
   "author": "Joel Thoms",
   "license": "MIT",
@@ -24,5 +24,19 @@
   "devDependencies": {
     "eslint": "^5.9.0",
     "jest": "^23.6.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{js,jsx,mjs}",
+      "!coverage/**"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 100,
+        "branches": 100,
+        "functions": 100,
+        "lines": 100
+      }
+    }
   }
 }
