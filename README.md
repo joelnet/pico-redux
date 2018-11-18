@@ -11,7 +11,7 @@ Pico Redux features a modular design so you only pay (bytes) for the features yo
 
 ```javascript
 // You might need to turn this:
-const store = createStore(rootReducer, init)
+const store = createStore(rootReducer)
 
 // Into this:
 const init = {
