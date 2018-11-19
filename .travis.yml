@@ -17,7 +17,6 @@ jobs:
       node_js:
         - "10.3.0"
       script:
-        - npm install
         - npm run test:coveralls
     - stage: deploy
       node_js:
@@ -28,4 +27,4 @@ jobs:
         - npm version patch -m "Version %s [skip ci]"
         - git push origin HEAD:master
         - git push --tags
-        - npm publish
+        # - npm publish
