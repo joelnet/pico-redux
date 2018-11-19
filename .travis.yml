@@ -27,4 +27,4 @@ jobs:
         - npm version patch -m "Version %s [skip ci]"
         - git push origin HEAD:master
         - git push --tags
-        # - npm publish
+        - npm publish
