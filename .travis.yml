@@ -17,6 +17,7 @@ jobs:
       node_js:
         - "10.3.0"
       script:
+        - npm install -g coveralls
         - npm run test:coveralls
     - stage: deploy
       node_js:
