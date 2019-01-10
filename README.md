@@ -90,3 +90,39 @@ const fetchPerson = id => dispatch =>
 
 store.dispatch(fetchPerson(1))
 ```
+
+# combineReducers
+
+You can combine reducers to into a single larger reducer.
+
+```javascript
+const todos = (state = [], action) => {
+  switch (action.type) {
+    case 'ADD_TODO':
+      return state.concat([action.text])
+    default:
+      return state
+  }
+}
+
+const counter = (state = 0, action) => {
+  switch (action.type) {
+    case 'INCREMENT':
+      return state + 1
+    case 'DECREMENT':
+      return state - 1
+    default:
+      return state
+  }
+}
+
+const reducer = combineReducers({
+  todos,
+  counter
+})
+
+const store = createStore(reducer)
+
+store.getState()
+//=> { 'counter': 0, 'todos': [] }
+```
