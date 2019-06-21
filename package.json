@@ -1,6 +1,6 @@
 {
   "name": "pico-redux",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "A Pico sized Redux",
   "author": "Joel Thoms",
   "license": "MIT",
