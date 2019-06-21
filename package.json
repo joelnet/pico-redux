@@ -23,13 +23,14 @@
     "lint": "eslint ."
   },
   "devDependencies": {
-    "eslint": "^5.9.0",
-    "jest": "^23.6.0"
+    "eslint": "^5.16.0",
+    "jest": "^24.8.0"
   },
   "jest": {
     "collectCoverageFrom": [
       "**/*.{js,jsx,mjs}",
-      "!coverage/**"
+      "!coverage/**",
+      "!changelog.config.js"
     ],
     "coverageThreshold": {
       "global": {
